@@ -76,10 +76,20 @@
       padding: 30px;
       position: relative;
       transition: all 0.3s ease;
+      overflow: hidden;
     }
     .card:hover { border-color: var(--brand); box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1); transform: translateY(-4px); }
     
-    .card-icon { color: var(--brand); margin-bottom: 20px; font-size: 1.5rem; }
+    .proj-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover; /* Ölçeği korur, kutuyu doldurur */
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border: 1px solid var(--border);
+    }
+
+    .card-icon { color: var(--brand); margin-bottom: 15px; font-size: 1.4rem; }
     .card h3 { margin: 0 0 12px 0; font-size: 1.3rem; }
     .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
     
@@ -130,6 +140,7 @@
     <div class="grid">
       
       <div class="card">
+        <img src="images/happy-paws.png" alt="Happy Paws UI" class="proj-img">
         <div class="card-icon"><i class="fas fa-paw"></i></div>
         <h3>Happy Paws</h3>
         <p>An automated pet feeding ecosystem featuring precision motor control and a custom LVGL-based user interface on STM32.</p>
@@ -139,6 +150,7 @@
       </div>
 
       <div class="card">
+        <img src="images/alu-layout.png" alt="8-Bit ALU Layout" class="proj-img">
         <div class="card-icon"><i class="fas fa-microchip"></i></div>
         <h3>8-Bit ALU (VLSI Design)</h3>
         <p>Full-custom layout design and verification of an 8-bit Arithmetic Logic Unit using Electric VLSI software.</p>
@@ -148,6 +160,7 @@
       </div>
 
       <div class="card">
+        <img src="images/modbus.png" alt="Modbus Terminal" class="proj-img">
         <div class="card-icon"><i class="fas fa-terminal"></i></div>
         <h3>Industrial Modbus Terminal</h3>
         <p>Robust communication terminal designed for interfacing with industrial PLCs and sensors using RS485/Modbus RTU.</p>
@@ -156,11 +169,11 @@
         </div>
       </div>
 
-      <a href="#7seg-details" class="card" style="display: block; cursor: pointer;">
+      <a href="#7seg-details" class="card" style="display: block;">
+        <img src="images/display_1.jpeg" alt="7-Seg Display" class="proj-img">
         <div class="card-icon"><i class="fas fa-hashtag"></i></div>
         <h3>Industrial 4-Digit 7-Seg Display</h3>
         <p>High-reliability display module for industrial environments with integrated driver logic and noise immunity.</p>
-        <p style="margin-top: 15px; font-size: 0.8rem; font-weight: 700; color: var(--brand);">Click to view hardware photos &darr;</p>
         <div class="tags">
           <span class="tag">PCB Design</span><span class="tag">Hardware</span><span class="tag">Drivers</span>
         </div>
@@ -197,15 +210,17 @@
       </div>
 
       <div id="7seg-details" style="margin-top: 50px; scroll-margin-top: 100px;">
-        <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--brand);"><i class="fas fa-camera"></i> Industrial 7-Segment Hardware Snapshots</h4>
+        <h4 style="margin-bottom: 20px; font-size: 1.1rem; color: var(--brand);"><i class="fas fa-camera"></i> Industrial 7-Segment Hardware Snapshots</h4>
+        
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
           <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #eee;">
-            <img src="images/display_1.jpeg" alt="7-Segment Display Front" style="width: 100%; height: auto; display: block; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="images/display_1.jpeg" alt="7-Segment Front" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
           </div>
           <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #eee;">
-            <img src="images/display_2.jpeg" alt="7-Segment Display Detail" style="width: 100%; height: auto; display: block; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+            <img src="images/display_2.jpeg" alt="7-Segment Detail" style="width: 100%; height: 280px; object-fit: cover; display: block; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
           </div>
         </div>
+        
         <p style="font-size: 0.85rem; color: var(--muted); margin-top: 15px;">Detailed hardware views of the Industrial 4-Digit Seven Segment Display projects.</p>
       </div>
     </div>

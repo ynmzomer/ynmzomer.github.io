@@ -107,6 +107,7 @@
     <nav class="menu">
       <a href="#projects">Work</a>
       <a href="#skills">Skills</a>
+      <a href="#videos">Demos</a>
       <a href="#writing">Articles</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -120,7 +121,7 @@
     <p>Specializing in firmware development, industrial protocols, and VLSI design. Currently building robust solutions with STM32 and industrial hardware.</p>
     <div class="social-links">
       <a href="https://github.com/ynmzomer" target="_blank" class="btn btn-dark"><i class="fab fa-github"></i> GitHub</a>
-      <a href="https://www.linkedin.com/in/%C3%B6mer-yanmaz-6a36a6248/" target="_blank" class="btn btn-dark"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      <a href="https://linkedin.com/in/ynmzomer" target="_blank" class="btn btn-dark"><i class="fab fa-linkedin"></i> LinkedIn</a>
     </div>
   </section>
 
@@ -155,14 +156,15 @@
         </div>
       </div>
 
-      <div class="card">
+      <a href="#7seg-details" class="card" style="display: block; cursor: pointer;">
         <div class="card-icon"><i class="fas fa-hashtag"></i></div>
         <h3>Industrial 4-Digit 7-Seg Display</h3>
         <p>High-reliability display module for industrial environments with integrated driver logic and noise immunity.</p>
+        <p style="margin-top: 15px; font-size: 0.8rem; font-weight: 700; color: var(--brand);">Click to view hardware photos &darr;</p>
         <div class="tags">
           <span class="tag">PCB Design</span><span class="tag">Hardware</span><span class="tag">Drivers</span>
         </div>
-      </div>
+      </a>
 
     </div>
   </section>
@@ -182,16 +184,35 @@
   </section>
 
   <section id="videos">
-    <div class="section-title"><h2>Project Demos</h2></div>
-    <div style="border-radius: 16px; overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 16/9;">
-      <iframe src="https://www.youtube.com/embed/s-Ppv_qkkEE" style="width:100%; height:100%; border:0;" allowfullscreen></iframe>
+    <div class="section-title"><h2>Project Demos & Hardware Visuals</h2></div>
+    <div class="card">
+      <h3>Happy Paws – Demo Video</h3>
+      <div style="position:relative;padding-top:56.25%;margin-top:12px;border-radius:12px;overflow:hidden;box-shadow: var(--shadow);">
+        <iframe 
+          src="https://www.youtube.com/embed/s-Ppv_qkkEE" 
+          style="position:absolute;inset:0;width:100%;height:100%;border:0;" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div id="7seg-details" style="margin-top: 50px; scroll-margin-top: 100px;">
+        <h4 style="margin-bottom: 15px; font-size: 1.1rem; color: var(--brand);"><i class="fas fa-camera"></i> Industrial 7-Segment Hardware Snapshots</h4>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px;">
+          <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #eee;">
+            <img src="images/display_1.jpeg" alt="7-Segment Display Front" style="width: 100%; height: auto; display: block; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+          <div style="border-radius: 8px; overflow: hidden; border: 1px solid var(--border); background: #eee;">
+            <img src="images/display_2.jpeg" alt="7-Segment Display Detail" style="width: 100%; height: auto; display: block; transition: 0.3s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+          </div>
+        </div>
+        <p style="font-size: 0.85rem; color: var(--muted); margin-top: 15px;">Detailed hardware views of the Industrial 4-Digit Seven Segment Display projects.</p>
+      </div>
     </div>
   </section>
 
   <section id="writing">
-    <div class="section-header">
-      <h2>Engineering Insights</h2>
-    </div>
+    <div class="section-title"><h2>Engineering Insights</h2></div>
     <a class="card" href="https://medium.com/@yanmazomar19" target="_blank" style="display: flex; align-items: center; justify-content: space-between;">
       <div>
         <h3>Technical Writing on Medium</h3>
@@ -199,6 +220,17 @@
       </div>
       <i class="fas fa-arrow-right" style="color: var(--brand)"></i>
     </a>
+  </section>
+
+  <section id="contact">
+    <div class="section-title"><h2>Contact</h2></div>
+    <div class="card">
+      <p>Feel free to reach out for collaborations or technical inquiries.</p>
+      <div style="margin-top: 15px;">
+        <p><strong>GitHub:</strong> <a href="https://github.com/ynmzomer" target="_blank">github.com/ynmzomer</a></p>
+        <p><strong>Medium:</strong> <a href="https://medium.com/@yanmazomar19" target="_blank">medium.com/@yanmazomar19</a></p>
+      </div>
+    </div>
   </section>
 
 </main>

@@ -336,6 +336,11 @@
       opacity: 1;
       transform: translateY(0);
     }
+	
+	#demos .grid {
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    }
+
 
     /* Responsive */
     @media (max-width: 768px) {
@@ -523,28 +528,52 @@
   </section>
 
   <section id="demos" class="section-padding">
-    <div class="section-header reveal">
-      <h2>Project Gallery</h2>
-      <p>Demonstrations and hardware prototypes.</p>
-    </div>
+  <div class="section-header reveal">
+    <h2>Project Gallery</h2>
+    <p>Demonstrations and hardware prototypes.</p>
+  </div>
 
-    <div class="grid">
-      <div class="reveal">
-        <h3 style="margin-bottom:16px;">Happy Paws Demo</h3>
-        <div class="media-container">
-          <iframe src="https://www.youtube.com/embed/s-Ppv_qkkEE" allowfullscreen title="Project Demo"></iframe>
-        </div>
-      </div>
+  <div class="grid">
 
-      <div class="reveal">
-        <h3 style="margin-bottom:16px;">Hardware Prototypes</h3>
-        <div class="gallery-grid">
-          <img src="images/display_1.jpeg" alt="Industrial Display Front" class="gallery-img" />
-          <img src="images/display_2.jpeg" alt="Industrial Display Back" class="gallery-img" />
-        </div>
+    <!-- Video 1 -->
+    <div class="reveal">
+      <h3 style="margin-bottom:16px;">Happy Paws Demo</h3>
+      <div class="media-container">
+        <iframe 
+          src="https://www.youtube.com/embed/s-Ppv_qkkEE" 
+          allowfullscreen 
+          title="Happy Paws Demo">
+        </iframe>
       </div>
     </div>
-  </section>
+
+    <!-- Video 2 -->
+    <div class="reveal">
+      <h3 style="margin-bottom:16px;">Hardware Prototype 1</h3>
+      <div class="media-container">
+        <iframe 
+          src="https://www.youtube.com/embed/3yjbxhyzlgk" 
+          allowfullscreen 
+          title="Industrial Display (Bag Count) #1">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Video 3 -->
+    <div class="reveal">
+      <h3 style="margin-bottom:16px;">Hardware Prototype 2</h3>
+      <div class="media-container">
+        <iframe 
+          src="https://www.youtube.com/embed/85WKhZyS7nQ" 
+          allowfullscreen 
+          title="Industrial Display (Car Wash Timer) #2">
+        </iframe>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <section id="writing" class="section-padding" style="padding-bottom: 0;">
     <div class="reveal">
